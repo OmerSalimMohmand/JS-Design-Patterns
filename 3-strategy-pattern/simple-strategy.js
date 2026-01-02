@@ -2,7 +2,7 @@ const pricingStrategies = {
   guest: (price) => price,
   member: (price) => price * 0.9,
   vip: (price) => price * 0.8,
-};
+}; //Interchangeable Behaviors encapsulation to avoid if-else
 
 pricingStrategies.student = (price) => price * 0.7;
 
